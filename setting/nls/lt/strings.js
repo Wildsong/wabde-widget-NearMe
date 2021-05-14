@@ -1,4 +1,4 @@
-/*global define*/
+﻿/*global define*/
 ///////////////////////////////////////////////////////////////////////////
 // Copyright © Esri. All Rights Reserved.
 //
@@ -139,7 +139,7 @@ define({
     "routeSettingTabTitle": "Krypčių nustatymai",
     "routeServiceUrl": "Maršruto paslauga",
     "buttonSet": "Nustatyti",
-    "routeServiceUrlHintText": "Užuomina: norėdami rasti ir pasirinkti maršrutų paslaugą, spustelėkite Nustatyti",
+    "routeServiceUrlHintText": "Patarimas: spustelėkite „Nustatyti“, jei norite naršyti ir pasirinkti maršruto paslaugą",
     "directionLengthUnit": "Krypties ilgio vienetai",
     "unitsForRouteHintText": "Patarimas: naudojama maršruto vienetams rodyti",
     "selectRouteSymbol": "Pasirinkti maršruto rodymo simbolį",

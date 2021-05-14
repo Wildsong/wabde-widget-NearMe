@@ -1,4 +1,4 @@
-/*global define*/
+﻿/*global define*/
 ///////////////////////////////////////////////////////////////////////////
 // Copyright © Esri. All Rights Reserved.
 //
@@ -139,7 +139,7 @@ define({
     "routeSettingTabTitle": "Nastavení trasování",
     "routeServiceUrl": "Služba trasování",
     "buttonSet": "Nastavit",
-    "routeServiceUrlHintText": "Nápověda: Klikněte na tlačítko Nastavit a zvolte službu trasování.",
+    "routeServiceUrlHintText": "Rada: Klikněte na tlačítko Nastavit a zvolte službu trasování.",
     "directionLengthUnit": "Délkové jednotky pokynů trasy",
     "unitsForRouteHintText": "Nápověda: Slouží k zobrazení jednotek trasy.",
     "selectRouteSymbol": "Vyberte symbol k zobrazení trasy.",

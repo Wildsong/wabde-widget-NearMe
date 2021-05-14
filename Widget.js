@@ -287,6 +287,26 @@ define([
     */
     onOpen: function () {
       if (this._isValidConfig) {
+        //To maintain the visibility of layers on NearMe close,
+        //set the current visibility of each configured layer
+        for (var i = 0; i < this.config.searchLayers.length; i++) {
+          var layerId = this.config.searchLayers[i].id;
+          var mapLayerID = null;
+          if (layerId.indexOf('_') > 0) {
+            mapLayerID = layerId.substring(0, layerId.lastIndexOf('_'));
+          }
+          //based on if layer is FeatureLayer of MapService get its visibility and update the config
+          if (this.map._layers[layerId]) {
+            this.config.searchLayers[i].visibility = this.map._layers[layerId].visible;
+          } else if (mapLayerID && this.map._layers[mapLayerID].visibleLayers) {
+            var layerUrlIndex = this.config.searchLayers[i].url.split('/');
+            layerUrlIndex = layerUrlIndex[layerUrlIndex.length - 1];
+            //check whether layer is available in mp server's visible layer array
+            var visibleLayers = this.map._layers[mapLayerID].visibleLayers;
+            visibleLayerIndex = array.indexOf(visibleLayers, parseInt(layerUrlIndex, 10));
+            this.config.searchLayers[i].visibility = visibleLayerIndex === -1 ? false : true;
+          }
+        }
         this._onWindowResize();
         if (!this.config.showLocationTool) {
           this._connectMapEventHandler();

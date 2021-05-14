@@ -1,4 +1,4 @@
-/*global define*/
+﻿/*global define*/
 ///////////////////////////////////////////////////////////////////////////
 // Copyright © Esri. All Rights Reserved.
 //
@@ -139,7 +139,7 @@ define({
     "routeSettingTabTitle": "Impostazioni direzioni",
     "routeServiceUrl": "Servizio itinerario",
     "buttonSet": "Imposta",
-    "routeServiceUrlHintText": "Suggerimento: fare clic su â€˜Impostaâ€™ per individuare e selezionare un servizio itinerario",
+    "routeServiceUrlHintText": "Suggerimento: fare clic su ‘Imposta’ per individuare e selezionare un servizio itinerario",
     "directionLengthUnit": "Unità di lunghezza direzione",
     "unitsForRouteHintText": "Suggerimento: utilizzato per visualizzare unità per percorso",
     "selectRouteSymbol": "Seleziona simbolo per visualizzare percorso",

@@ -1,4 +1,4 @@
-/*global define*/
+﻿/*global define*/
 ///////////////////////////////////////////////////////////////////////////
 // Copyright © Esri. All Rights Reserved.
 //
@@ -139,7 +139,7 @@ define({
     "routeSettingTabTitle": "Pengaturan Arah",
     "routeServiceUrl": "Routing Service",
     "buttonSet": "Atur",
-    "routeServiceUrlHintText": "Petunjuk: Klik â€˜Setâ€™ untuk menelusuri dan memilih routing service",
+    "routeServiceUrlHintText": "Petunjuk: Klik 'Set' untuk menelusuri dan memilih routing service",
     "directionLengthUnit": "Unit panjang arah",
     "unitsForRouteHintText": "Petunjuk: Digunakan untuk menampilkan unit untuk rute",
     "selectRouteSymbol": "Pilih simbol untuk menampilkan rute",

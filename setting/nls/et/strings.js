@@ -1,4 +1,4 @@
-/*global define*/
+﻿/*global define*/
 ///////////////////////////////////////////////////////////////////////////
 // Copyright © Esri. All Rights Reserved.
 //
@@ -139,7 +139,7 @@ define({
     "routeSettingTabTitle": "Teejuhiste seaded",
     "routeServiceUrl": "Marsruutimisteenus",
     "buttonSet": "Määra",
-    "routeServiceUrlHintText": "Vihje: klõpsake teekonnajuhiste teenuse sirvimiseks ja valimiseks käsku â€˜Määraâ€™.",
+    "routeServiceUrlHintText": "Vihje: marsruutimisteenuse sirvimiseks ja valimiseks klõpsake nuppu ‘Määra’",
     "directionLengthUnit": "Teejuhise pikkusühikud",
     "unitsForRouteHintText": "Vihje: kasutatakse marsruudi ühikute kuvamiseks",
     "selectRouteSymbol": "Vali marsruudi kuvamiseks sümbol",

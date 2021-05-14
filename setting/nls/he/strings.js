@@ -1,4 +1,4 @@
-/*global define*/
+﻿/*global define*/
 ///////////////////////////////////////////////////////////////////////////
 // Copyright © Esri. All Rights Reserved.
 //
@@ -139,7 +139,7 @@ define({
     "routeSettingTabTitle": "הגדרות הוראות נסיעה",
     "routeServiceUrl": "שירות מסלול",
     "buttonSet": "הגדר",
-    "routeServiceUrlHintText": "רמז: לחץ על 'הגדר' כדי לנווט לשירות מסלול ולבחור אותו",
+    "routeServiceUrlHintText": "רמז: לחץ על 'הגדר' כדי לנתב לשירות מסלול ולבחור אותו",
     "directionLengthUnit": "יחידות אורך של הוראות נסיעה",
     "unitsForRouteHintText": "רמז: משמש להצגת יחידות עבור מסלול",
     "selectRouteSymbol": "בחר סמל להצגת מסלול",

@@ -1,4 +1,4 @@
-/*global define*/
+﻿/*global define*/
 define({
   "_widgetLabel": "Найближчі",
   "searchHeaderText": "Пошук адреси або розташувати на карті",

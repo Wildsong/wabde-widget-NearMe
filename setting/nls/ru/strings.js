@@ -1,4 +1,4 @@
-/*global define*/
+﻿/*global define*/
 ///////////////////////////////////////////////////////////////////////////
 // Copyright © Esri. All Rights Reserved.
 //
@@ -139,7 +139,7 @@ define({
     "routeSettingTabTitle": "Параметры путевых листов",
     "routeServiceUrl": "Сервис маршрутов",
     "buttonSet": "Установить",
-    "routeServiceUrlHintText": "Подсказка: Щелкните Задать™, чтобы перейти к выбору сервиса маршрутизации",
+    "routeServiceUrlHintText": "Подсказка: Щелкните \"Установить\", чтобы перейти к выбору сервиса маршрутов",
     "directionLengthUnit": "Единицы длины маршрутов",
     "unitsForRouteHintText": "Подсказка: Используется для отображения единиц измерения маршрутов",
     "selectRouteSymbol": "Выбрать символ отображения маршрута",

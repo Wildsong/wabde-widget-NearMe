@@ -1,4 +1,4 @@
-/*global define*/
+﻿/*global define*/
 ///////////////////////////////////////////////////////////////////////////
 // Copyright © Esri. All Rights Reserved.
 //
@@ -139,7 +139,7 @@ define({
     "routeSettingTabTitle": "Ρυθμίσεις κατεύθυνσης",
     "routeServiceUrl": "Υπηρεσία δρομολόγησης",
     "buttonSet": "Ορισμός",
-    "routeServiceUrlHintText": "Υπόδειξη: Πατήστε \"Ορισμός\" για αναζήτηση και επιλογή μιας υπηρεσίας δρομολόγησης",
+    "routeServiceUrlHintText": "Υπόδειξη: Κάντε κλικ στην επιλογή \"Ορισμός\" για αναζήτηση και επιλογή ενός routing service",
     "directionLengthUnit": "Μονάδες μήκους κατεύθυνσης",
     "unitsForRouteHintText": "Υπόδειξη: Χρησιμοποιείται για την εμφάνιση μονάδων για το δρομολόγιο",
     "selectRouteSymbol": "Επιλογή συμβόλου για εμφάνιση δρομολογίου",

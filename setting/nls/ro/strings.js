@@ -1,4 +1,4 @@
-/*global define*/
+﻿/*global define*/
 ///////////////////////////////////////////////////////////////////////////
 // Copyright © Esri. All Rights Reserved.
 //
@@ -139,7 +139,7 @@ define({
     "routeSettingTabTitle": "Setări indicaţii de deplasare",
     "routeServiceUrl": "Serviciu de rute",
     "buttonSet": "Setare",
-    "routeServiceUrlHintText": "Sugestie: Faceţi clic pe â€˜Setareâ€™ pentru a răsfoi şi selecta un serviciu de rute",
+    "routeServiceUrlHintText": "Sugestie: Apăsaţi „Setare” pentru a răsfoi şi selecta un serviciu de rute",
     "directionLengthUnit": "Unităţi de lungime pentru indicaţiile de direcţie",
     "unitsForRouteHintText": "Sugestie: Utilizaţi pentru afişarea unităţilor pentru rută",
     "selectRouteSymbol": "Selectare simbol pentru afişarea rutei",

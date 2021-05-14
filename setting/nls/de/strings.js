@@ -1,4 +1,4 @@
-/*global define*/
+﻿/*global define*/
 ///////////////////////////////////////////////////////////////////////////
 // Copyright © Esri. All Rights Reserved.
 //
@@ -139,7 +139,7 @@ define({
     "routeSettingTabTitle": "Wegbeschreibungseinstellungen",
     "routeServiceUrl": "Routing-Service",
     "buttonSet": "Festlegen",
-    "routeServiceUrlHintText": "Hinweis: Klicken Sie auf \"Festlegen\", um einen Routing-Service zu durchsuchen und auszuwählen.",
+    "routeServiceUrlHintText": "Hinweis: Klicken Sie auf \"Festlegen\", um einen Routing-Service zu durchsuchen und auszuwählen",
     "directionLengthUnit": "Längeneinheiten für Wegbeschreibung",
     "unitsForRouteHintText": "Hinweis: Wird zum Anzeigen von Einheiten für die Route verwendet",
     "selectRouteSymbol": "Symbol zum Anzeigen der Route auswählen",

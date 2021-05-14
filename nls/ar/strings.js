@@ -1,4 +1,4 @@
-/*global define*/
+﻿/*global define*/
 define({
   "_widgetLabel": "بجواري",
   "searchHeaderText": "بحث عن عنوان أو تحديد موقعه على الخريطة",

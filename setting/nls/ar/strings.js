@@ -1,4 +1,4 @@
-/*global define*/
+﻿/*global define*/
 ///////////////////////////////////////////////////////////////////////////
 // Copyright © Esri. All Rights Reserved.
 //
@@ -139,7 +139,7 @@ define({
     "routeSettingTabTitle": "إعدادات الاتجاهات",
     "routeServiceUrl": "خدمة التوجيه",
     "buttonSet": "تعيين",
-    "routeServiceUrlHintText": "تلميح: انقر على â€˜تعيينâ€™ لاستعراض خدمة التوجيه وتحديدها",
+    "routeServiceUrlHintText": "تلميح: انقر على 'تعيين' لاستعراض خدمة التوجيه وتحديدها",
     "directionLengthUnit": "وحدات طول الاتجاه",
     "unitsForRouteHintText": "تلميح: تُستخدم لعرض وحدات المسار",
     "selectRouteSymbol": "حدد رمزًا لعرض المسار",

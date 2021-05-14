@@ -1,4 +1,4 @@
-/*global define*/
+﻿/*global define*/
 ///////////////////////////////////////////////////////////////////////////
 // Copyright © Esri. All Rights Reserved.
 //
@@ -139,7 +139,7 @@ define({
     "routeSettingTabTitle": "Instellingen routebeschrijving",
     "routeServiceUrl": "Routingservice",
     "buttonSet": "Instellen",
-    "routeServiceUrlHintText": "Tip: Klik op â€˜Setâ€™ om te bladeren en selecteer een routingservice",
+    "routeServiceUrlHintText": "Tip: Klik op 'Instellen' om te bladeren en selecteer een routingservice",
     "directionLengthUnit": "Lengte-eenheden richting",
     "unitsForRouteHintText": "Tip: gebruikt voor de weergave van eenheden voor route",
     "selectRouteSymbol": "Selecteer symbool om de route weer te geven",

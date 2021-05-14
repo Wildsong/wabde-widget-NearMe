@@ -1,4 +1,4 @@
-/*global define*/
+﻿/*global define*/
 ///////////////////////////////////////////////////////////////////////////
 // Copyright © Esri. All Rights Reserved.
 //
@@ -139,7 +139,7 @@ define({
     "routeSettingTabTitle": "Doğrultu Ayarları",
     "routeServiceUrl": "Rota Oluşturma Servisi",
     "buttonSet": "Ayarla",
-    "routeServiceUrlHintText": "İpucu: Bir rota oluşturma servisini inceleyerek seçmek için â€˜Ayarlaâ€™ düğmesine tıklayın",
+    "routeServiceUrlHintText": "İpucu: Bir rota oluşturma servisini inceleyerek seçmek için ‘Ayarla’ butonuna tıklayın",
     "directionLengthUnit": "Yol tarifi uzunluk birimi",
     "unitsForRouteHintText": "İpucu: Rota birimini görüntülemek için kullanılır",
     "selectRouteSymbol": "Rotayı görüntülemek için simge seç",

@@ -1,4 +1,4 @@
-/*global define*/
+﻿/*global define*/
 ///////////////////////////////////////////////////////////////////////////
 // Copyright © Esri. All Rights Reserved.
 //
@@ -139,7 +139,7 @@ define({
     "routeSettingTabTitle": "Configuraciones de indicaciones",
     "routeServiceUrl": "Servicio de generación de rutas",
     "buttonSet": "Definir",
-    "routeServiceUrlHintText": "Sugerencia: haga clic en \"Definir\" para examinar y seleccionar un servicio de generación de rutas",
+    "routeServiceUrlHintText": "Sugerencia: haz clic en ‘Definir’ para examinar y seleccionar un servicio de generación de rutas",
     "directionLengthUnit": "Unidades de longitud de dirección",
     "unitsForRouteHintText": "Sugerencia: se utiliza para visualizar las unidades para la ruta",
     "selectRouteSymbol": "Seleccionar símbolo para visualizar ruta",

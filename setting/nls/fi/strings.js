@@ -1,4 +1,4 @@
-/*global define*/
+﻿/*global define*/
 ///////////////////////////////////////////////////////////////////////////
 // Copyright © Esri. All Rights Reserved.
 //
@@ -139,7 +139,7 @@ define({
     "routeSettingTabTitle": "Suuntien asetukset",
     "routeServiceUrl": "Reitityspalvelu",
     "buttonSet": "Aseta",
-    "routeServiceUrlHintText": "Vihje: selaa valitsemalla â€˜Asetaâ€™ ja valitse reitityspalvelu",
+    "routeServiceUrlHintText": "Vihje: selaa ja valitse reitityspalvelu napsauttamalla Määritä",
     "directionLengthUnit": "Ajo-ohjeiden pituusyksiköt",
     "unitsForRouteHintText": "Vihje: käytetään reitin yksiköiden näyttämiseen",
     "selectRouteSymbol": "Valitse reitin näyttämiseen käytettävä symboli",

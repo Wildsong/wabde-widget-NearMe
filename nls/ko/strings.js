@@ -1,4 +1,4 @@
-/*global define*/
+﻿/*global define*/
 define({
   "_widgetLabel": "내 주변",
   "searchHeaderText": "맵의 주소 또는 위치 검색",

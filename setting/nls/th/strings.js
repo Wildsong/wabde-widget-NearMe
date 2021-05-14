@@ -1,4 +1,4 @@
-/*global define*/
+﻿/*global define*/
 ///////////////////////////////////////////////////////////////////////////
 // Copyright © Esri. All Rights Reserved.
 //
@@ -139,7 +139,7 @@ define({
     "routeSettingTabTitle": "การตั้งค่าทิศทาง",
     "routeServiceUrl": "การบริการเส้นทาง",
     "buttonSet": "ตั้ง",
-    "routeServiceUrlHintText": "คำแนะนำ: คลิก â€~Setâ€™ เพื่อเรียกดูและเลือกเซอร์วิสเส้นทาง",
+    "routeServiceUrlHintText": "คำแนะนำ : คลิก “เซต” เพื่อเบราวซ์และเลือกการบริการเส้นทาง",
     "directionLengthUnit": "หน่วยความยาวของทิศทาง",
     "unitsForRouteHintText": "คำแนะนำ : ใช้เพื่อแสดงผลหน่วยของเส้นทาง",
     "selectRouteSymbol": "เลือกสัญลักษณ์เพื่อแสดงผลเส้นทาง",

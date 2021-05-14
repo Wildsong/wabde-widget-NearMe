@@ -1,4 +1,4 @@
-/*global define*/
+﻿/*global define*/
 ///////////////////////////////////////////////////////////////////////////
 // Copyright © Esri. All Rights Reserved.
 //
@@ -139,7 +139,7 @@ define({
     "routeSettingTabTitle": "Nastavenia navigácie",
     "routeServiceUrl": "Trasovacia služba",
     "buttonSet": "Nastaviť",
-    "routeServiceUrlHintText": "Tip: Kliknite na â€˜Setâ€™ na prehľadávanie a voľbu trasovacej služby",
+    "routeServiceUrlHintText": "Tip: Kliknite na ’Nastaviť’ na prehľadávanie a voľbu trasovacej služby",
     "directionLengthUnit": "Jednotky dĺžky pre navigáciu",
     "unitsForRouteHintText": "Tip: Použité na zobrazenie jednotiek trasy",
     "selectRouteSymbol": "Vybrať symbol na zobrazenie trasy",

@@ -1,4 +1,4 @@
-/*global define*/
+﻿/*global define*/
 ///////////////////////////////////////////////////////////////////////////
 // Copyright © Esri. All Rights Reserved.
 //
@@ -139,7 +139,7 @@ define({
     "routeSettingTabTitle": "Attributs de direction",
     "routeServiceUrl": "Service de calcul d'itinéraire",
     "buttonSet": "Définir",
-    "routeServiceUrlHintText": "Astuce : cliquez sur Définir pour rechercher et sélectionner un service de calcul d'itinéraire",
+    "routeServiceUrlHintText": "Astuce : cliquez sur ‘Définir’ pour rechercher et sélectionner un service de calcul d’itinéraire",
     "directionLengthUnit": "Unités de longueur de la direction",
     "unitsForRouteHintText": "Astuce : utilisé pour afficher les unités de l’itinéraire",
     "selectRouteSymbol": "Sélectionner le symbole pour afficher l’itinéraire",

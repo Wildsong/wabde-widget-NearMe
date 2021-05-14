@@ -1,4 +1,4 @@
-/*global define*/
+﻿/*global define*/
 define({
   "_widgetLabel": "Közelemben",
   "searchHeaderText": "Cím keresése vagy megadása a térképen",

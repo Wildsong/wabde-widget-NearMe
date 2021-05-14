@@ -1,4 +1,4 @@
-/*global define*/
+﻿/*global define*/
 define({
   "_widgetLabel": "靠近我",
   "searchHeaderText": "搜尋地圖上的地址或位置",

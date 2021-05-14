@@ -1,4 +1,4 @@
-/*global define*/
+﻿/*global define*/
 ///////////////////////////////////////////////////////////////////////////
 // Copyright © Esri. All Rights Reserved.
 //
@@ -139,7 +139,7 @@ define({
     "routeSettingTabTitle": "Cài đặt Chỉ đường",
     "routeServiceUrl": "Dịch vụ Định tuyến",
     "buttonSet": "Thiết lập",
-    "routeServiceUrlHintText": "Mẹo: Nhấp vào â€˜Đặtâ€™ để duyệt và chọn dịch vụ định tuyến",
+    "routeServiceUrlHintText": "Mẹo: Bấm vào ‘Thiết lập’ để duyệt và chọn dịch vụ định tuyến",
     "directionLengthUnit": "Đơn vị độ dài thông tin hướng",
     "unitsForRouteHintText": "Mẹo: Được sử dụng để hiển thị các đơn vị cho tuyến đường",
     "selectRouteSymbol": "Chọn ký hiệu để hiển thị tuyến đường",

@@ -1,4 +1,4 @@
-/*global define*/
+﻿/*global define*/
 ///////////////////////////////////////////////////////////////////////////
 // Copyright © Esri. All Rights Reserved.
 //
@@ -139,7 +139,7 @@ define({
     "routeSettingTabTitle": "Riktningsinställningar",
     "routeServiceUrl": "Ruttjänst",
     "buttonSet": "Ange",
-    "routeServiceUrlHintText": "Tips: Klicka på â€˜Angeâ€™ för att leta efter och välja en ruttjänst",
+    "routeServiceUrlHintText": "Tips: Klicka på Ange för att leta efter och välja en ruttjänst",
     "directionLengthUnit": "Längdenheter för riktning",
     "unitsForRouteHintText": "Tips: Används för att visa enheter för rutter",
     "selectRouteSymbol": "Välj symbol för visning av rutten",

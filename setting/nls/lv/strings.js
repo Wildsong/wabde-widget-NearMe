@@ -1,4 +1,4 @@
-/*global define*/
+﻿/*global define*/
 ///////////////////////////////////////////////////////////////////////////
 // Copyright © Esri. All Rights Reserved.
 //
@@ -139,7 +139,7 @@ define({
     "routeSettingTabTitle": "Virzienu iestatījumi",
     "routeServiceUrl": "Maršruta pakalpojums",
     "buttonSet": "Iestatīt",
-    "routeServiceUrlHintText": "Padoms: Noklikšķiniet uz Iestatīt, lai pārlūkotu un izvēlētos maršruta servisu",
+    "routeServiceUrlHintText": "Padoms. Noklikšķiniet uz Iestatīt, lai pārlūkotu un izvēlētos maršrutēšanas servisu.",
     "directionLengthUnit": "Virziena garuma vienības",
     "unitsForRouteHintText": "Padoms. Izmanto maršruta vienību rādīšanai",
     "selectRouteSymbol": "Izvēlēties maršruta rādīšanas simbolu",

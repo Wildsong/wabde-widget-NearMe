@@ -1,4 +1,4 @@
-/*global define*/
+﻿/*global define*/
 ///////////////////////////////////////////////////////////////////////////
 // Copyright © Esri. All Rights Reserved.
 //
@@ -139,7 +139,7 @@ define({
     "routeSettingTabTitle": "Ustawienia wskazówek dojazdu",
     "routeServiceUrl": "Usługa wyznaczania trasy",
     "buttonSet": "Ustaw",
-    "routeServiceUrlHintText": "Wskazówka: kliknij przycisk Ustaw, aby wybrać usługę wyznaczania trasy",
+    "routeServiceUrlHintText": "Wskazówka: kliknij przycisk Set (Ustaw), aby wybrać usługę wyznaczania trasy",
     "directionLengthUnit": "Jednostki długości używane wskazówek dojazdu",
     "unitsForRouteHintText": "Wskazówka: służy do wyświetlania jednostek używanych dla wyznaczonej trasy",
     "selectRouteSymbol": "Wybierz symbol, aby wyświetlić trasę",

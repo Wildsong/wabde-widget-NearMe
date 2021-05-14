@@ -1,4 +1,4 @@
-/*global define*/
+﻿/*global define*/
 ///////////////////////////////////////////////////////////////////////////
 // Copyright © Esri. All Rights Reserved.
 //
@@ -139,7 +139,7 @@ define({
     "routeSettingTabTitle": "Indstillinger for kørselsvejledninger",
     "routeServiceUrl": "Rutetjeneste",
     "buttonSet": "Indstil",
-    "routeServiceUrlHintText": "Tip: Klik på Indstil for at gå til og vælge en rutetjeneste",
+    "routeServiceUrlHintText": "Tip: Klik på ‘Indstil’ for at gå til og vælge en rutetjeneste",
     "directionLengthUnit": "Længdeenheder for kørselsvejledning",
     "unitsForRouteHintText": "Tip: Bruges til at vise enheder for ruten",
     "selectRouteSymbol": "Vælg symbol for visning af rute",

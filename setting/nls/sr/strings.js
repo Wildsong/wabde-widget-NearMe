@@ -1,4 +1,4 @@
-/*global define*/
+﻿/*global define*/
 ///////////////////////////////////////////////////////////////////////////
 // Copyright © Esri. All Rights Reserved.
 //
@@ -139,7 +139,7 @@ define({
     "routeSettingTabTitle": "Postavke smernica",
     "routeServiceUrl": "Servis za rutiranje",
     "buttonSet": "Postavi",
-    "routeServiceUrlHintText": "Napomena: kliknite na â€˜Postaviâ€™ da biste potražili i izabrali servis za rutiranje",
+    "routeServiceUrlHintText": "Napomena: kliknite na „Postavi“ da biste potražili i izabrali servis za rutiranje",
     "directionLengthUnit": "Jedinice dužine pravca",
     "unitsForRouteHintText": "Napomena: koristi se za prikazivanje jedinica za rutiranje",
     "selectRouteSymbol": "Izaberite simbol za prikaz rute",

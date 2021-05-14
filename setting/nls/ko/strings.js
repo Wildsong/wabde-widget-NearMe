@@ -1,4 +1,4 @@
-/*global define*/
+﻿/*global define*/
 ///////////////////////////////////////////////////////////////////////////
 // Copyright © Esri. All Rights Reserved.
 //
@@ -139,7 +139,7 @@ define({
     "routeSettingTabTitle": "길찾기 설정",
     "routeServiceUrl": "경로 서비스",
     "buttonSet": "설정",
-    "routeServiceUrlHintText": "힌트: 경로 지정 서비스를 검색하고 선택하려면 â€˜Setâ€™ 클릭",
+    "routeServiceUrlHintText": "힌트: 라우팅 서비스를 찾아 선택하려면 '설정'을 클릭하세요.",
     "directionLengthUnit": "길찾기 길이 단위",
     "unitsForRouteHintText": "힌트: 경로의 단위를 나타내는 데 사용됨",
     "selectRouteSymbol": "경로를 나타낼 심볼 선택",

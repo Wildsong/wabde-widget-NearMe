@@ -1,4 +1,4 @@
-/*global define*/
+﻿/*global define*/
 ///////////////////////////////////////////////////////////////////////////
 // Copyright © Esri. All Rights Reserved.
 //
@@ -139,7 +139,7 @@ define({
     "routeSettingTabTitle": "Definições de Direção",
     "routeServiceUrl": "Serviço de Roteamento",
     "buttonSet": "Definir",
-    "routeServiceUrlHintText": "Dica: Clique em â€˜Setâ€™ para navegar e selecione um serviço de rotas",
+    "routeServiceUrlHintText": "Sugestão: Clique 'Definir' para navegar e seleccionar um serviço de roteamento",
     "directionLengthUnit": "Unidades de comprimento de direcção",
     "unitsForRouteHintText": "Sugestão: Usado para exibir unidade para roteamento",
     "selectRouteSymbol": "Seleccionar símbolo para exibir rota",
