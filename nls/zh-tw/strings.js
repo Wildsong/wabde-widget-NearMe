@@ -1,4 +1,4 @@
-﻿/*global define*/
+/*global define*/
 define({
   "_widgetLabel": "靠近我",
   "searchHeaderText": "搜尋地圖上的地址或位置",
@@ -29,6 +29,7 @@ define({
   "applyingFilterLabel": "套用篩選器",
   "filterNotAppliedLabel": "未套用篩選器",
   "filterAppliedLabel": "已套用篩選器",
+  "errorInAttributeSearch": "在圖層清單 widget 中檢查搜尋來源圖層的可見性以檢視結果",
   "units": {
     "miles": {
       "displayText": "英里",

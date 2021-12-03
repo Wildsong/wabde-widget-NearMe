@@ -1041,3 +1041,20 @@ input[type=text]::-ms-clear
     margin-right: 20px;
 }
 
+.jimu-widget-nearme-setting .esriCTSearchSourceLayerField a
+{
+    line-height:30px; 
+    text-decoration: none;
+}
+
+.jimu-widget-nearme-setting .esriCTSearchSourceLayerField .esri-icon-question
+{
+    color: #485566;
+    font-style: normal;
+}
+  
+.jimu-rtl .jimu-widget-nearme-setting .esriCTSearchSourceLayerField .esri-icon-question
+{
+    transform: rotateY(180deg);
+    display: inline-block;
+}

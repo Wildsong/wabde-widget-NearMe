@@ -1,4 +1,4 @@
-﻿/*global define*/
+/*global define*/
 ///////////////////////////////////////////////////////////////////////////
 // Copyright © Esri. All Rights Reserved.
 //
@@ -48,7 +48,6 @@ define({
     "countryCode": "Riigi või piirkonna kood(id)",
     "countryCodeEg": "nt ",
     "countryCodeHint": "Kui jätate selle välja tühjaks, teostatakse otsing kõikides riikides ja piirkondades",
-    "questionMark": "?",
     "searchInCurrentMapExtent": "Otsi ainult praegusest kaardiulatusest",
     "zoomScale": "Suumiskaala",
     "locatorUrl": "Geokodeerija URL",

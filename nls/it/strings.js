@@ -1,4 +1,4 @@
-﻿/*global define*/
+/*global define*/
 define({
   "_widgetLabel": "Near Me",
   "searchHeaderText": "Cercare un indirizzo o individuarlo sulla mappa",
@@ -29,6 +29,7 @@ define({
   "applyingFilterLabel": "Applicazione filtro",
   "filterNotAppliedLabel": "Filtro non applicato",
   "filterAppliedLabel": "Filtro applicato",
+  "errorInAttributeSearch": "Controlla la visibilità del layer di origine della ricerca nel widget Elenco dei layer per visualizzare il risultato",
   "units": {
     "miles": {
       "displayText": "Miglia",

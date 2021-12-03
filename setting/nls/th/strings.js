@@ -1,4 +1,4 @@
-﻿/*global define*/
+/*global define*/
 ///////////////////////////////////////////////////////////////////////////
 // Copyright © Esri. All Rights Reserved.
 //
@@ -48,7 +48,6 @@ define({
     "countryCode": "ประเทศหรือรหัสภูมิภาค(s)",
     "countryCodeEg": "ตัวอย่าง ",
     "countryCodeHint": "ปล่อยให้เป็นค่าว่างจะค้นหาทุกประเทศและภูมิภาค",
-    "questionMark": "?",
     "searchInCurrentMapExtent": "ค้นหาเฉพาะในขอบเขตแผนที่ปัจจุบัน",
     "zoomScale": "ขยายมาตราส่วน",
     "locatorUrl": "URL เครื่องระบุตำแหน่ง",

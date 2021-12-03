@@ -1,4 +1,4 @@
-﻿/*global define*/
+/*global define*/
 define({
   "_widgetLabel": "Κοντά σε μένα",
   "searchHeaderText": "Εκτέλεση αναζήτησης για μια διεύθυνση ή εντοπισμός σε χάρτη",
@@ -29,6 +29,7 @@ define({
   "applyingFilterLabel": "Εφαρμογή φίλτρου",
   "filterNotAppliedLabel": "Το φίλτρο δεν εφαρμόστηκε",
   "filterAppliedLabel": "Το φίλτρο εφαρμόστηκε",
+  "errorInAttributeSearch": "Ελέγξτε την ορατότητα του θεματικού επιπέδου πηγής αναζήτησης στο widget Λίστα Θεματικών Επιπέδων για την προβολή του αποτελέσματος",
   "units": {
     "miles": {
       "displayText": "Μίλια",

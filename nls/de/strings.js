@@ -1,4 +1,4 @@
-﻿/*global define*/
+/*global define*/
 define({
   "_widgetLabel": "Umkreissuche",
   "searchHeaderText": "Eine Adresse suchen oder auf der Karte verorten",
@@ -29,6 +29,7 @@ define({
   "applyingFilterLabel": "Filter wird angewendet",
   "filterNotAppliedLabel": "Filter nicht angewendet",
   "filterAppliedLabel": "Angewendeter Filter",
+  "errorInAttributeSearch": "Überprüfen Sie die Layer-Sichtbarkeit der Suchquellen im Widget \"Layer-Liste\", um das Ergebnis anzuzeigen.",
   "units": {
     "miles": {
       "displayText": "Meilen",

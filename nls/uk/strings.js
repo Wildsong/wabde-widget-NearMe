@@ -1,4 +1,4 @@
-﻿/*global define*/
+/*global define*/
 define({
   "_widgetLabel": "Найближчі",
   "searchHeaderText": "Пошук адреси або розташувати на карті",
@@ -29,6 +29,7 @@ define({
   "applyingFilterLabel": "Застосування фільтра",
   "filterNotAppliedLabel": "Фільтр не застосовано",
   "filterAppliedLabel": "Фільтр застосовано",
+  "errorInAttributeSearch": "Перевірте видимість шару джерела пошуку у віджеті «Список шарів», щоб переглянути результат",
   "units": {
     "miles": {
       "displayText": "Милі",

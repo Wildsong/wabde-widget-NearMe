@@ -1,4 +1,4 @@
-﻿/*global define*/
+/*global define*/
 ///////////////////////////////////////////////////////////////////////////
 // Copyright © Esri. All Rights Reserved.
 //
@@ -48,7 +48,6 @@ define({
     "countryCode": "Ülke veya Bölge Kodları",
     "countryCodeEg": "örneğin ",
     "countryCodeHint": "Bu değer boş bırakılırsa tüm ülkeler ve bölgeler aranır",
-    "questionMark": "?",
     "searchInCurrentMapExtent": "Yalnızca geçerli harita yayılımını ara",
     "zoomScale": "Yakınlaştırma Ölçeği",
     "locatorUrl": "Coğrafi Kodlayıcı URL'si",

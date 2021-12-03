@@ -49,7 +49,6 @@ define({
       countryCode: "Country or Region Code(s)", // Shown as a label in config UI
       countryCodeEg: "e.g. ", // Shown as a placeholder in config UI
       countryCodeHint: "Leaving this value blank will search all countries and regions", // Shown as a hint text in config UI for country code textbox
-      questionMark: "?", //Shown as a question mark in config UI for help
       searchInCurrentMapExtent: "Only search in current map extent", // Shown as a label in config UI for checkbox
       zoomScale: "Zoom Scale", // Shown as a label in config UI
       locatorUrl: "Geocoder URL", // Shown as a label in config UI for layer chooser

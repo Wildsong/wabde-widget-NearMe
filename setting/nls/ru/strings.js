@@ -1,4 +1,4 @@
-﻿/*global define*/
+/*global define*/
 ///////////////////////////////////////////////////////////////////////////
 // Copyright © Esri. All Rights Reserved.
 //
@@ -48,7 +48,6 @@ define({
     "countryCode": "Коды стран или регионов",
     "countryCodeEg": "напр. ",
     "countryCodeHint": "Не заполняйте, чтобы искать по всем странам и регионам",
-    "questionMark": "?",
     "searchInCurrentMapExtent": "Искать только в пределах текущего экстента карты",
     "zoomScale": "Масштаб",
     "locatorUrl": "URL-адрес геокодера",

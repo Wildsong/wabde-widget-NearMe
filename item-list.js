@@ -164,8 +164,10 @@ define([
     _gallerySwiper: [], //to hold instances of the gallery swiper dijit
     _mediaRefreshTimers: null, //to hold all media refresh interval timers
     _allContentPanes: [], //to hold instance of all content panes for info or feature & related
+    _allLayersAreHidden: false, //flag to know if all layers are hidden
 
     postCreate: function () {
+      this._allLayersAreHidden = false;
       this._filterIcon = null; //to store selected theme color for filter icon
       this._proximityIcon = null; //to store selected theme color for proximity icon
       this._gallerySwiper = []; //to store all the gallery swiper dijit (feature's & related's)
@@ -262,10 +264,12 @@ define([
           "class": "esriCTTabContainer"
         }, this._panels.infoPanel));
         this._tabContainer.startup();
-        //for accesibility scroll bar is not accessible through keyboard
+        //for accessibility scroll bar is not accessible through keyboard
         //when popup is lengthy and does not have any focusable element
         domAttr.set(this._featureInfoPanel.domNode, "tabindex", 0);
-        domAttr.set(this._featureInfoPanel.domNode, "role", "region");
+        domAttr.set(this._featureInfoPanel.domNode, "role", "document");
+        //add class so that border is shown on focus to info panel
+        domClass.add(this._featureInfoPanel.domNode, "esriCTInfoPanelFocus");
         //Create placeholder for proximity icon
         proximityOptions = { "class": "esriCTProximityParent" };
         if (this.config.enableProximitySearch !== undefined && !this.config.enableProximitySearch) {
@@ -305,7 +309,7 @@ define([
         //for accesibility scroll bar is not accessible through keyboard
         //when popup is lengthy and does not have any focusable element
         domAttr.set(this._featureInfoPanel.domNode, "tabindex", 0);
-        domAttr.set(this._featureInfoPanel.domNode, "role", "region");
+        domAttr.set(this._featureInfoPanel.domNode, "role", "document");
         var jimuTabNode =
           query(".esriCTItemListMainContainer .esriCTDirectionInfoPanel .esriCTPanelHeader");
         if (jimuTabNode) {
@@ -386,7 +390,9 @@ define([
               if (!this._isFeatureList) {
                 this.loading.hide();
                 this._clearContent(this._featureListContent);
-                this.showLayersOnBackToLayerList();
+                if (this.config.selectedSearchLayerOnly) {
+                  this.showLayersOnBackToLayerList();
+                }
                 this._selectedLayer = null;
                 this._isFeatureList = false;
                 this._showPanel("layerListPanel", true);
@@ -555,8 +561,6 @@ define([
       //get updated filters on the layer
       this._getUpdatedLayerFilters();
       this._searchedFeatures = {};
-      //show all layers
-      this.showAllLayers();
       this._setSearchedLocation(searchedLocation);
       this._setServiceArea(serviceArea);
       //clear failed layer list
@@ -605,14 +609,17 @@ define([
       this._currentPanel = this._panels.layerListPanel;
       domStyle.set(this._currentPanel, 'display', 'block');
       domStyle.set(this._currentPanel, 'left', '0px');
-
+      //Consider all layers are hidden, each layers visibility is checked in _queryForCountOnly
+      //in that function if any layer is visible set _allLayersAreHidden to false
+      this._allLayersAreHidden = true;
       //create layers list
       for (var i = 0; i < this._operationalLayers.length; i++) {
         //query to display feature count
         this._resetFilter(this._operationalLayers[i].layerIndex);
         this._createItemTemplate(this._operationalLayers[i], featureDeferArr);
       }
-      if (this._operationalLayers.length === 1) {
+      if (this._operationalLayers.length === 1 &&
+        this._getOperationalLayersVisibility(this._operationalLayers[0].url, this._operationalLayers[0].id)) {
         domStyle.set(this._panels.layerListPanel, 'display', 'none');
         this._onSingleLayerFound(null, this._operationalLayers[0]);
       }
@@ -800,8 +807,12 @@ define([
     * @memberOf widgets/NearMe/item-list
     **/
     _queryForCountOnly: function (templateDiv, opLayer, featureDeferArr) {
-      var defer, queryParams;
+      var defer, queryParams, isLayerVisible;
       queryParams = this._getQueryParams(opLayer);
+      isLayerVisible = this._getOperationalLayersVisibility(opLayer.url, opLayer.id);
+      if (isLayerVisible) {
+        this._allLayersAreHidden = false;
+      }
       // if intersectSearchedLocation option is set to true in widget configuration and layer is polygon layer then, query for feature
       // which are intersecting searched location instead of buffer area
       if (this.config.intersectSearchedLocation && opLayer.geometryType === "esriGeometryPolygon" &&
@@ -809,7 +820,9 @@ define([
         queryParams.geometry = this._selectedPoint.geometry;
       }
       defer = new Deferred();
-      if (queryParams.where && queryParams.where === "1=2") {
+      //if query where condition is 1=2 OR
+      //if layers current visibility is turned off then don't query that layer
+      if ((queryParams.where && queryParams.where === "1=2") || !isLayerVisible) {
         domStyle.set(templateDiv, 'display', 'none');
         //if layer is failed set tab index to -1, so that it will not be focused using tab
         //and set focus to first loaded layer with features
@@ -821,7 +834,7 @@ define([
         defer.resolve();
       } else {
         opLayer.queryFeatures(queryParams, lang.hitch(this, function (featureSet) {
-          if (featureSet.features.length > 0) {
+          if (featureSet.features.length > 0 && isLayerVisible) {
             this._selectedLayer = opLayer;
             this._layerCount++;
             this._searchedFeatures[opLayer.id] = featureSet.features;
@@ -845,7 +858,9 @@ define([
             //and set focus to first loaded layer with features
             domAttr.set(templateDiv, 'tabindex', '-1');
             focusUtil.focus(query(".esriCTItemlList[tabindex='0']", templateDiv.parentElement)[0]);
-            this._showHideOperationalLayer(opLayer.url, opLayer.id, false);
+            if (this.config.selectedSearchLayerOnly) {
+              this._showHideOperationalLayer(opLayer.url, opLayer.id, false);
+            }
           }
           this._failedLayers.push(opLayer.title);
           defer.resolve();
@@ -913,10 +928,14 @@ define([
         domStyle.set(this._panels.layerListPanel, 'display', 'block');
         domStyle.set(this._panels.layerListPanel, 'left', '0px');
         var noFeatureFoundMessage = this.editorXssFilter.sanitize(this.config.noFeatureFoundMessage);
+        noFeatureFoundMessage = noFeatureFoundMessage ? noFeatureFoundMessage : this.editorXssFilter.sanitize(this.nls.noFeatureFoundText);
+        if (this._attributeSearchList || this._allLayersAreHidden) {
+          noFeatureFoundMessage = this.editorXssFilter.sanitize(this.nls.errorInAttributeSearch);
+        }
         domConstruct.create("div", {
           "class": "esriCTNoFeatureFound",
-          "aria-label": noFeatureFoundMessage ? noFeatureFoundMessage : this.nls.noFeatureFoundText,
-          "innerHTML": noFeatureFoundMessage ? noFeatureFoundMessage : this.editorXssFilter.sanitize(this.nls.noFeatureFoundText)
+          "aria-label": noFeatureFoundMessage,
+          "innerHTML": noFeatureFoundMessage
         }, this._panels.layerListPanel);
         this.emit("noFeatureFound");
       } else if (this._layerCount === 1 && this._operationalLayers.length !== 1) {
@@ -946,7 +965,9 @@ define([
       this.loading.show();
       //If features for selected layer are available then use them else query for those features
       if (this._searchedFeatures[this._selectedLayer.id]) {
-        this._hideAllLayers();
+        if (this.config.selectedSearchLayerOnly) {
+          this._hideAllLayers();
+        }
         if (this._searchedFeatures[this._selectedLayer.id].length > 0) {
           this._creatFeatureList(this._searchedFeatures[this._selectedLayer.id]);
         }
@@ -964,12 +985,22 @@ define([
         }
         this._selectedLayer.queryFeatures(queryParams, lang.hitch(this,
           function (featureSet) {
-            this._hideAllLayers();
-            //check if any feature is found
-            if (featureSet.features.length > 0) {
-              this._showFilteredFeaturesOnLoad(featureSet.features, this._selectedLayer.id);
-              //creates feature list
-              this._creatFeatureList(featureSet.features);
+            if (this.config.selectedSearchLayerOnly) {
+              this._hideAllLayers();
+              //check if any feature is found
+              if (featureSet.features.length > 0) {
+                this._showFilteredFeaturesOnLoad(featureSet.features, this._selectedLayer.id);
+                //creates feature list
+                this._creatFeatureList(featureSet.features);
+              }
+            } else {
+              //check if any feature is found
+              if (featureSet.features.length > 0 &&
+                this._getOperationalLayersVisibility(this._selectedLayer.url, this._selectedLayer.id)) {
+                this._showFilteredFeaturesOnLoad(featureSet.features, this._selectedLayer.id);
+                //creates feature list
+                this._creatFeatureList(featureSet.features);
+              }
             }
             this.loading.hide();
             if (defer) {
@@ -1171,8 +1202,7 @@ define([
       if (this.config.selectedSearchLayerOnly) {
         var filter;
         //display selected layer only
-        this._showHideOperationalLayer(this._selectedLayer.url, this._selectedLayer
-          .id, true);
+        this._showHideOperationalLayer(this._selectedLayer.url, this._selectedLayer.id, true);
         filter = this._selectedLayer.objectIdField + ' in (' + featureIds + ')';
         //set filter on query layer
         this._selectedLayer.setDefinitionExpression(filter);
@@ -1606,6 +1636,7 @@ define([
         //once info is loaded and if it have links it can be a last focus node
         this.own(on(popupRenderer, "content-update", lang.hitch(this, function () {
           this._getFeatureInfoLastNode();
+          focusUtil.focus(this._featureInfoPanel.domNode);
         })));
         //maintain instance of contantes pane to get last focus node
         this._allContentPanes.push(contentPane);
@@ -2741,8 +2772,7 @@ define([
     },
 
     /**
-    * Shows all layers on back to layer list by honouring show selectedSearchLayerOnly flag
-    * If this flag is true, show only those layers available in searched result else hide it
+    * Honour show selectedSearchLayerOnly flag and
     * Fixed gitHub ticket #541
     * @memberOf widgets/NearMe/item-list
     **/
@@ -2756,13 +2786,12 @@ define([
           } else {
             showLayer = false;
           }
-        } else {
-          showLayer = true;
+          this._showHideOperationalLayer(this.config.searchLayers[i].url,
+            this.config.searchLayers[i].id, showLayer);
         }
-        this._showHideOperationalLayer(this.config.searchLayers[i].url,
-          this.config.searchLayers[i].id, showLayer);
       }
     },
+
 
     /**
     * Show/hide selected layer on map
@@ -2827,6 +2856,43 @@ define([
           }
         }
       }
+    },
+
+    _getOperationalLayersVisibility: function (layerUrl, id) {
+      var layer, lastChar, mapLayerUrl, layerUrlIndex, visibleLayers, visibleLayerIndex;
+      layerUrlIndex = layerUrl.split('/');
+      layerUrlIndex = layerUrlIndex[layerUrlIndex.length - 1];
+      for (layer in this.map._layers) {
+        if (this.map._layers.hasOwnProperty(layer)) {
+          //check if layer is visible on map
+          if (id && this.map._layers[layer].url === layerUrl && this.map._layers[layer].id === id) {
+            //show or hide selected layer on map
+            return this.map._layers[layer].visible;
+          } else if (this.map._layers[layer].visibleLayers) {
+            //fetch id of map server layer to match with map layer
+            if (id && this.map._layers[layer].id === id.substring(0, id.lastIndexOf('_'))) {
+              //check for map server layer
+              lastChar = this.map._layers[layer].url[this.map._layers[layer].url.length - 1];
+              //create url for map server layer
+              if (lastChar === "/") {
+                mapLayerUrl = this.map._layers[layer].url + layerUrlIndex;
+              } else {
+                mapLayerUrl = this.map._layers[layer].url + "/" + layerUrlIndex;
+              }
+              //match layer urls
+              if (mapLayerUrl === layerUrl) {
+                //check whether layer is available in mp server's visible layer array
+                visibleLayers = this.map._layers[layer].visibleLayers;
+                visibleLayerIndex = array.indexOf(visibleLayers, parseInt(layerUrlIndex, 10));
+                if (visibleLayerIndex !== -1) {
+                  return true && this.map._layers[layer].visible;
+                }
+              }
+            }
+          }
+        }
+      }
+      return false;
     },
 
     /**

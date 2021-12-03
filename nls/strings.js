@@ -30,6 +30,7 @@ define({
     applyingFilterLabel: "Applying filter", // Set as a aria-label for applying filter
     filterNotAppliedLabel: "Filter not applied", // Set as a aria-label for filter not applied
     filterAppliedLabel: "Filter applied", // Set as a aria-label for filter applied
+    errorInAttributeSearch: "Check search source layer's visibility in the Layer List widget to view the result", //Shown as a message in widget pane when result of attribute search cannot be displayed due to layer visibility
     units: { // label shown as label for slider text(slider unit) and acronym in feature list
       miles: {
         displayText: "Miles",

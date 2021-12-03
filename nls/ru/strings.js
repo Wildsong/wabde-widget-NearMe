@@ -1,4 +1,4 @@
-﻿/*global define*/
+/*global define*/
 define({
   "_widgetLabel": "Ближайшие",
   "searchHeaderText": "Поиск адресов или мест на карте",
@@ -29,6 +29,7 @@ define({
   "applyingFilterLabel": "Применение фильтра",
   "filterNotAppliedLabel": "Фильтр не применен",
   "filterAppliedLabel": "Фильтр применен",
+  "errorInAttributeSearch": "Проверьте видимость слоя источника поиска в виджете Список слоев, чтобы просмотреть результат",
   "units": {
     "miles": {
       "displayText": "Мили",

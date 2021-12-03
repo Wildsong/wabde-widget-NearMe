@@ -1,4 +1,4 @@
-﻿/*global define*/
+/*global define*/
 ///////////////////////////////////////////////////////////////////////////
 // Copyright © Esri. All Rights Reserved.
 //
@@ -48,7 +48,6 @@ define({
     "countryCode": "国家或区域代码",
     "countryCodeEg": "例如 ",
     "countryCodeHint": "将此值留空可搜索所有国家和地区",
-    "questionMark": "?",
     "searchInCurrentMapExtent": "仅在当前地图范围内搜索",
     "zoomScale": "缩放比例",
     "locatorUrl": "地理编码器 URL",

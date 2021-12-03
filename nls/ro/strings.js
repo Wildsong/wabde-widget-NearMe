@@ -1,4 +1,4 @@
-﻿/*global define*/
+/*global define*/
 define({
   "_widgetLabel": "Aproape de mine",
   "searchHeaderText": "Căutați o adresă sau localizați pe hartă",
@@ -29,6 +29,7 @@ define({
   "applyingFilterLabel": "Se aplică filtru",
   "filterNotAppliedLabel": "Filtru neaplicat",
   "filterAppliedLabel": "Filtru aplicat",
+  "errorInAttributeSearch": "Verificați vizibilitatea stratului tematic al sursei de căutare în widgetul Listă straturi tematice pentru a vizualiza rezultatul",
   "units": {
     "miles": {
       "displayText": "Mile",

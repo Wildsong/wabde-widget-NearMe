@@ -1,4 +1,4 @@
-﻿/*global define*/
+/*global define*/
 define({
   "_widgetLabel": "近隣検索",
   "searchHeaderText": "住所を検索するか、マップ上で位置を特定します",
@@ -29,6 +29,7 @@ define({
   "applyingFilterLabel": "フィルターを適用しています",
   "filterNotAppliedLabel": "フィルターは適用されませんでした",
   "filterAppliedLabel": "フィルターの適用",
+  "errorInAttributeSearch": "レイヤー リスト ウィジェットの検索ソース レイヤーの表示設定を確認して結果を表示します",
   "units": {
     "miles": {
       "displayText": "マイル",

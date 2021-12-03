@@ -1,4 +1,4 @@
-﻿/*global define*/
+/*global define*/
 define({
   "_widgetLabel": "Prómixo à Mim",
   "searchHeaderText": "Procurar por um endereço ou localizar no mapa",
@@ -29,6 +29,7 @@ define({
   "applyingFilterLabel": "Aplicando filtro",
   "filterNotAppliedLabel": "Filtro não aplicado",
   "filterAppliedLabel": "Filtro aplicado",
+  "errorInAttributeSearch": "Verifique a visibilidade da camada de origem de pesquisa no widget Lista de Camadas para ver o resultado",
   "units": {
     "miles": {
       "displayText": "Milhas",

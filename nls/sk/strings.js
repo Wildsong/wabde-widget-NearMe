@@ -1,4 +1,4 @@
-﻿/*global define*/
+/*global define*/
 define({
   "_widgetLabel": "Blízko mňa",
   "searchHeaderText": "Vyhľadajte adresu alebo ju lokalizujte na mape",
@@ -29,6 +29,7 @@ define({
   "applyingFilterLabel": "Používa sa filter",
   "filterNotAppliedLabel": "Filter nie je použitý",
   "filterAppliedLabel": "Filter použitý",
+  "errorInAttributeSearch": "Skontrolujte viditeľnosť zdrojovej vrstvy vo widgete Zoznamu vrstiev, aby ste zobrazili výsledok",
   "units": {
     "miles": {
       "displayText": "Míle",

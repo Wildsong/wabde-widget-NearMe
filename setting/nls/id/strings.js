@@ -1,4 +1,4 @@
-﻿/*global define*/
+/*global define*/
 ///////////////////////////////////////////////////////////////////////////
 // Copyright © Esri. All Rights Reserved.
 //
@@ -48,7 +48,6 @@ define({
     "countryCode": "Kode Negara atau Wilayah",
     "countryCodeEg": "mis. ",
     "countryCodeHint": "Membiarkan nilai ini kosong berarti akan mencari semua negara dan wilayah",
-    "questionMark": "?",
     "searchInCurrentMapExtent": "Cari hanya dalam jangkauan peta saat ini",
     "zoomScale": "Skala Zoom",
     "locatorUrl": "URL Geocoder",

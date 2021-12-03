@@ -1,4 +1,4 @@
-﻿/*global define*/
+/*global define*/
 define({
   "_widgetLabel": "Ở Gần Tôi",
   "searchHeaderText": "Tìm kiếm địa chỉ hoặc xác định vị trí trên bản đồ",
@@ -29,6 +29,7 @@ define({
   "applyingFilterLabel": "Áp dụng bộ lọc",
   "filterNotAppliedLabel": "Không áp dụng bộ lọc",
   "filterAppliedLabel": "Đã áp dụng bộ lọc",
+  "errorInAttributeSearch": "Kiểm tra khả năng hiển thị của lớp nguồn tìm kiếm trong tiện ích Danh sách Lớp để xem kết quả",
   "units": {
     "miles": {
       "displayText": "Dặm",

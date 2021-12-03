@@ -1,4 +1,4 @@
-﻿/*global define*/
+/*global define*/
 define({
   "_widgetLabel": "Lähelläni",
   "searchHeaderText": "Hae osoitetta tai etsi kartalta",
@@ -29,6 +29,7 @@ define({
   "applyingFilterLabel": "Käytetään suodatinta",
   "filterNotAppliedLabel": "Suodatinta ei ole käytetty",
   "filterAppliedLabel": "Suodatinta on käytetty",
+  "errorInAttributeSearch": "Voit tarkastella tulosta tarkistamalla hakulähteen karttatason näkyvyyden Karttatasot-pienoisohjelmassa",
   "units": {
     "miles": {
       "displayText": "Mailia",

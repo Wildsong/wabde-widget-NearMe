@@ -1,4 +1,4 @@
-﻿/*global define*/
+/*global define*/
 define({
   "_widgetLabel": "بجواري",
   "searchHeaderText": "بحث عن عنوان أو تحديد موقعه على الخريطة",
@@ -29,6 +29,7 @@ define({
   "applyingFilterLabel": "تطبيق عامل التصفية",
   "filterNotAppliedLabel": "لم يتم تطبيق عامل التصفية",
   "filterAppliedLabel": "تم تطبيق عامل التصفية",
+  "errorInAttributeSearch": "تحقق من رؤية طبقة مصدر البحث في عنصر واجهة مستخدم قائمة الطبقات \"Layer List\" لعرض النتيجة",
   "units": {
     "miles": {
       "displayText": "أميال",

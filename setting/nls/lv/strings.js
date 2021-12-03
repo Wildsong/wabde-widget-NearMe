@@ -1,4 +1,4 @@
-﻿/*global define*/
+/*global define*/
 ///////////////////////////////////////////////////////////////////////////
 // Copyright © Esri. All Rights Reserved.
 //
@@ -48,7 +48,6 @@ define({
     "countryCode": "Valsts vai reģiona kods(-i)",
     "countryCodeEg": "piem., ",
     "countryCodeHint": "Ja šī vērtība tiks atstāta tukša, tiks meklētas visas valstis un reģioni.",
-    "questionMark": "?",
     "searchInCurrentMapExtent": "Meklēt tikai pašreizējā kartes pārklājumā",
     "zoomScale": "Zoom Scale",
     "locatorUrl": "Ģeokodētāja URL",

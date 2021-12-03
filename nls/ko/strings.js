@@ -1,4 +1,4 @@
-﻿/*global define*/
+/*global define*/
 define({
   "_widgetLabel": "내 주변",
   "searchHeaderText": "맵의 주소 또는 위치 검색",
@@ -29,6 +29,7 @@ define({
   "applyingFilterLabel": "필터 적용 중",
   "filterNotAppliedLabel": "필터가 적용되지 않음",
   "filterAppliedLabel": "필터가 적용됨",
+  "errorInAttributeSearch": "결과를 보려면 레이어 목록 위젯에서 검색 원본 레이어의 가시성을 확인합니다.",
   "units": {
     "miles": {
       "displayText": "마일",

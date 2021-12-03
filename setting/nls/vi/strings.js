@@ -1,4 +1,4 @@
-﻿/*global define*/
+/*global define*/
 ///////////////////////////////////////////////////////////////////////////
 // Copyright © Esri. All Rights Reserved.
 //
@@ -48,7 +48,6 @@ define({
     "countryCode": "Mã Quốc gia hoặc Khu vực",
     "countryCodeEg": "ví dụ ",
     "countryCodeHint": "Để trống giá trị này sẽ tìm kiếm tất cả các quốc gia và khu vực",
-    "questionMark": "?",
     "searchInCurrentMapExtent": "Chỉ tìm kiếm trong kích thước bản đồ hiện tại",
     "zoomScale": "Tỷ lệ Thu phóng",
     "locatorUrl": "URL Bộ mã địa lý",

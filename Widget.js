@@ -282,11 +282,11 @@ define([
     },
 
     /**
-    * Resize the widget components and connect map click on widget open
+    * Stores the layer visibility in config from the current map layers
     * @memberOf widgets/NearMe/Widget
     */
-    onOpen: function () {
-      if (this._isValidConfig) {
+    _storeLayersVisibility: function () {
+      if (this.config && this.config.searchLayers) {
         //To maintain the visibility of layers on NearMe close,
         //set the current visibility of each configured layer
         for (var i = 0; i < this.config.searchLayers.length; i++) {
@@ -298,15 +298,25 @@ define([
           //based on if layer is FeatureLayer of MapService get its visibility and update the config
           if (this.map._layers[layerId]) {
             this.config.searchLayers[i].visibility = this.map._layers[layerId].visible;
-          } else if (mapLayerID && this.map._layers[mapLayerID].visibleLayers) {
+          } else if (mapLayerID && this.map._layers[mapLayerID] && this.map._layers[mapLayerID].visibleLayers) {
             var layerUrlIndex = this.config.searchLayers[i].url.split('/');
             layerUrlIndex = layerUrlIndex[layerUrlIndex.length - 1];
             //check whether layer is available in mp server's visible layer array
             var visibleLayers = this.map._layers[mapLayerID].visibleLayers;
-            visibleLayerIndex = array.indexOf(visibleLayers, parseInt(layerUrlIndex, 10));
+            var visibleLayerIndex = array.indexOf(visibleLayers, parseInt(layerUrlIndex, 10));
             this.config.searchLayers[i].visibility = visibleLayerIndex === -1 ? false : true;
           }
         }
+      }
+    },
+
+    /**
+    * Resize the widget components and connect map click on widget open
+    * @memberOf widgets/NearMe/Widget
+    */
+    onOpen: function () {
+      if (this._isValidConfig) {
+        this._storeLayersVisibility();
         this._onWindowResize();
         if (!this.config.showLocationTool) {
           this._connectMapEventHandler();
@@ -315,7 +325,7 @@ define([
           this._slider.set("value", this.config.defaultBufferDistance);
         }
         if (jimuUtils.isAutoFocusFirstNodeWidget(this)) {
-         jimuUtils.focusFirstFocusNode(this.domNode);
+          jimuUtils.focusFirstFocusNode(this.domNode);
         }
       }
     },
@@ -353,10 +363,6 @@ define([
           this._itemListObject.resetAllFilters();
           this._clearResults();
         }
-        //set layers visibility according to widget load
-        if (this._itemListObject) {
-          this._itemListObject.showAllLayers(true);
-        }
       }
     },
 
@@ -371,13 +377,23 @@ define([
     },
 
     /**
+    * Maintain the layerVisibility on widget active
+    * @memberOf widgets/NearMe/Widget.js
+    */
+    onActive: function () {
+      //only when selectedSearchLayerOnly is active maintain the layerVisibility on widget active
+      if (this._isValidConfig && this.config.selectedSearchLayerOnly) {
+        this._storeLayersVisibility();
+      }
+    },
+
+    /**
     * This function destroys itemList widget and clears the search result
     * @memberOf widgets/NearMe/Widget
     */
     _destroyWidgetData: function () {
       if (this._itemListObject) {
         this._itemListObject.removeGraphicsLayer();
-        this._itemListObject.showAllLayers(true);
         this._itemListObject.resetAllFilters();
         this._itemListObject.destroy();
         this._itemListObject = null;
@@ -806,7 +822,9 @@ define([
       this.own(this._searchInstance.on("clear-search", lang.hitch(this, function () {
         //clears the applied filters by widget and display the layers
         if (this._itemListObject) {
-          this._itemListObject.showAllLayers(true);
+          if (this.config.selectedSearchLayerOnly) {
+            this._itemListObject.showAllLayers(true);
+          }
           this._itemListObject.resetAllFilters();
         }
         //clears result
@@ -926,7 +944,7 @@ define([
     */
     _initReverseGeocoder: function () {
       var geocoderUrl;
-      //set the first geocoder from configured search source settings for reverse geocoding
+      //Set the first geocoder from configured search source settings for reverse geocoding
       if (this.config.searchSourceSettings && this.config.searchSourceSettings.sources) {
         array.some(this.config.searchSourceSettings.sources, lang.hitch(this, function (source) {
           //if selected source is geocoder create geocoder source else feature layer
@@ -981,6 +999,8 @@ define([
         if (this._searchInstance) {
           this._searchInstance.setSearchText(addressString);
         }
+        //If showInfoWindowOnSelect is checked in the configuration then only show reverse geocoded address in popup
+        if (this.config.searchSourceSettings.showInfoWindowOnSelect) {
         //create info-template
         infoTemplate = new InfoTemplate();
         infoTemplate.setContent("${Match_addr}");
@@ -1004,6 +1024,7 @@ define([
             screenPoint));
           this.map.infoWindow.isShowing = true;
         }), 500);
+      }
       }
     },
 

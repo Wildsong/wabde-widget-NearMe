@@ -1,4 +1,4 @@
-﻿/*global define*/
+/*global define*/
 define({
   "_widgetLabel": "Nära mig",
   "searchHeaderText": "Sök efter en adress eller leta upp en plats på kartan",
@@ -29,6 +29,7 @@ define({
   "applyingFilterLabel": "Tillämpar filter",
   "filterNotAppliedLabel": "Ej tillämpat filter",
   "filterAppliedLabel": "Tillämpat filter",
+  "errorInAttributeSearch": "Kryssa i sökkällslagrets synlighet i lagerlistewidgeten för att visa resultatet",
   "units": {
     "miles": {
       "displayText": "Mile",

@@ -1,4 +1,4 @@
-﻿/*global define*/
+/*global define*/
 ///////////////////////////////////////////////////////////////////////////
 // Copyright © Esri. All Rights Reserved.
 //
@@ -48,7 +48,6 @@ define({
     "countryCode": "Kód(y) krajiny alebo regiónu",
     "countryCodeEg": "napr. ",
     "countryCodeHint": "Ak ponecháte túto hodnotu prázdnu, bude sa vyhľadávať vo všetkých krajinách a regiónoch",
-    "questionMark": "?",
     "searchInCurrentMapExtent": "Vyhľadávať iba v aktuálnom rozsahu mapy",
     "zoomScale": "Mierka priblíženia",
     "locatorUrl": "URL geokodéra",

@@ -1,4 +1,4 @@
-﻿/*global define*/
+/*global define*/
 ///////////////////////////////////////////////////////////////////////////
 // Copyright © Esri. All Rights Reserved.
 //
@@ -48,7 +48,6 @@ define({
     "countryCode": "Maa- tai aluekoodit",
     "countryCodeEg": "esim. ",
     "countryCodeHint": "Jos jätät tämän arvon tyhjäksi, ohjelma etsii kaikista maista ja kaikilta alueilta",
-    "questionMark": "?",
     "searchInCurrentMapExtent": "Etsi vain nykyisestä karttalaajuudesta",
     "zoomScale": "Tarkennustaso",
     "locatorUrl": "Geokooderin URL-osoite",

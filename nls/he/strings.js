@@ -1,4 +1,4 @@
-﻿/*global define*/
+/*global define*/
 define({
   "_widgetLabel": "בקרבתי",
   "searchHeaderText": "חפש כתובת או אתר כתובת במפה",
@@ -29,6 +29,7 @@ define({
   "applyingFilterLabel": "מחיל מסנן",
   "filterNotAppliedLabel": "המסנן לא הוחל",
   "filterAppliedLabel": "המסנן הוחל",
+  "errorInAttributeSearch": "בדוק את הנראות של שכבת מקור החיפוש בווידג'ט 'רשימת שכבות' כדי להציג את התוצאה",
   "units": {
     "miles": {
       "displayText": "מיילים",

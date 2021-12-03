@@ -1,4 +1,4 @@
-﻿/*global define*/
+/*global define*/
 ///////////////////////////////////////////////////////////////////////////
 // Copyright © Esri. All Rights Reserved.
 //
@@ -48,7 +48,6 @@ define({
     "countryCode": "Cod(uri) ţară sau regiune",
     "countryCodeEg": "de ex. ",
     "countryCodeHint": "Dacă lăsaţi această valoare necompletată, vor fi căutate toate ţările şi regiunile",
-    "questionMark": "?",
     "searchInCurrentMapExtent": "Căutaţi doar în extinderea de hartă curentă",
     "zoomScale": "Scară de transfocare",
     "locatorUrl": "URL geocodificator",

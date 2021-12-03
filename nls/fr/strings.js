@@ -1,4 +1,4 @@
-﻿/*global define*/
+/*global define*/
 define({
   "_widgetLabel": "Autour de moi",
   "searchHeaderText": "Rechercher une adresse ou situer sur la carte",
@@ -29,6 +29,7 @@ define({
   "applyingFilterLabel": "Application du filtre",
   "filterNotAppliedLabel": "Filtre non appliqué",
   "filterAppliedLabel": "Filtre appliqué",
+  "errorInAttributeSearch": "Vérifiez la visibilité de la couche source de recherche dans le widget Liste des couches pour voir le résultat",
   "units": {
     "miles": {
       "displayText": "Milles",

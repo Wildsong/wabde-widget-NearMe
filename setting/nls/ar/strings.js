@@ -1,4 +1,4 @@
-﻿/*global define*/
+/*global define*/
 ///////////////////////////////////////////////////////////////////////////
 // Copyright © Esri. All Rights Reserved.
 //
@@ -48,7 +48,6 @@ define({
     "countryCode": "كود الدولة أو المنطقة",
     "countryCodeEg": "مثال ",
     "countryCodeHint": "سيؤدي ترك هذه القيمة فارغة إلى البحث في كل الدول والمناطق",
-    "questionMark": "؟",
     "searchInCurrentMapExtent": "البحث في مدى الخريطة الحالي فقط",
     "zoomScale": "مقياس التكبير/التصغير",
     "locatorUrl": "عنوان URL للمكود الجغرافي",

@@ -1,4 +1,4 @@
-﻿/*global define*/
+/*global define*/
 define({
   "_widgetLabel": "ใกล้ฉัน",
   "searchHeaderText": "ค้นหาที่อยู่หรือค้นหาบนแผนที่",
@@ -29,6 +29,7 @@ define({
   "applyingFilterLabel": "กำลังใช้ตัวกรอง",
   "filterNotAppliedLabel": "ไม่ได้ใช้ตัวกรอง",
   "filterAppliedLabel": "ใช้ตัวกรองแล้ว",
+  "errorInAttributeSearch": "ตรวจสอบการมองเห็นชั้นข้อมูลแหล่งที่มาของการค้นหาในวิดเจ็ตรายการชั้นข้อมูลเพื่อดูผลลัพธ์",
   "units": {
     "miles": {
       "displayText": "ไมล์",

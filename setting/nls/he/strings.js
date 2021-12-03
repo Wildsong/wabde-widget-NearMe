@@ -1,4 +1,4 @@
-﻿/*global define*/
+/*global define*/
 ///////////////////////////////////////////////////////////////////////////
 // Copyright © Esri. All Rights Reserved.
 //
@@ -48,7 +48,6 @@ define({
     "countryCode": "קוד/ים של ארצות או אזורים",
     "countryCodeEg": "לדוגמה ",
     "countryCodeHint": "השארת הערך הזה ריק תפעיל חיפוש בכל הארצות והאזורים",
-    "questionMark": "?",
     "searchInCurrentMapExtent": "חפש רק בתיחום המפה הנוכחי",
     "zoomScale": "קנה מידה להתמקדות",
     "locatorUrl": "URL של מעגן הכתובות",

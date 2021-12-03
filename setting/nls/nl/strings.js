@@ -1,4 +1,4 @@
-﻿/*global define*/
+/*global define*/
 ///////////////////////////////////////////////////////////////////////////
 // Copyright © Esri. All Rights Reserved.
 //
@@ -48,7 +48,6 @@ define({
     "countryCode": "Land- of regiocode(s)",
     "countryCodeEg": "bijv. ",
     "countryCodeHint": "Laat deze waarde leeg en alle landen en regio's worden gezocht",
-    "questionMark": "?",
     "searchInCurrentMapExtent": "Alleen zoeken in huidige kaartextent",
     "zoomScale": "Schaal voor in-/uitzoomen",
     "locatorUrl": "Geocoder-URL",

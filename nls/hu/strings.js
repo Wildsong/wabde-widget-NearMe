@@ -1,4 +1,4 @@
-﻿/*global define*/
+/*global define*/
 define({
   "_widgetLabel": "Közelemben",
   "searchHeaderText": "Cím keresése vagy megadása a térképen",
@@ -29,6 +29,7 @@ define({
   "applyingFilterLabel": "Szűrő alkalmazása",
   "filterNotAppliedLabel": "Szűrő nincs alkalmazva",
   "filterAppliedLabel": "Szűrő alkalmazva",
+  "errorInAttributeSearch": "Az eredmény megtekintéséhez ellenőrizze a keresési forrásréteg láthatóságát a Réteglista widgetben.",
   "units": {
     "miles": {
       "displayText": "Mérföld",

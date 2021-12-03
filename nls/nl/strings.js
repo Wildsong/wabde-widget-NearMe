@@ -1,4 +1,4 @@
-﻿/*global define*/
+/*global define*/
 define({
   "_widgetLabel": "Bij mij in de buurt",
   "searchHeaderText": "Zoek een adres of zoek op kaart",
@@ -29,6 +29,7 @@ define({
   "applyingFilterLabel": "Filter toepassen",
   "filterNotAppliedLabel": "Filter niet toegepast",
   "filterAppliedLabel": "Filter toegepast",
+  "errorInAttributeSearch": "Selecteer Zichtbaarheid laagbron zoeken in de laaglijstwidget om het resultaat weer te geven",
   "units": {
     "miles": {
       "displayText": "Mijl",

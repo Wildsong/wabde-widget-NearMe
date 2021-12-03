@@ -1,4 +1,4 @@
-﻿/*global define*/
+/*global define*/
 define({
   "_widgetLabel": "Di Dekat Saya",
   "searchHeaderText": "Cari alamat atau temukan lokasinya di peta",
@@ -29,6 +29,7 @@ define({
   "applyingFilterLabel": "Menerapkan filter",
   "filterNotAppliedLabel": "Filter tidak diterapkan",
   "filterAppliedLabel": "Filter diterapkan",
+  "errorInAttributeSearch": "Periksa visibilitas layer sumber pencarian dalam widget Daftar Layer untuk melihat hasilnya",
   "units": {
     "miles": {
       "displayText": "Mil",

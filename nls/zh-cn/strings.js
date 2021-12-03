@@ -1,4 +1,4 @@
-﻿/*global define*/
+/*global define*/
 define({
   "_widgetLabel": "周边",
   "searchHeaderText": "在地图上搜索地址或定位",
@@ -29,6 +29,7 @@ define({
   "applyingFilterLabel": "正在应用过滤器",
   "filterNotAppliedLabel": "未应用过滤器",
   "filterAppliedLabel": "已应用过滤器",
+  "errorInAttributeSearch": "在图层列表微件中检查搜索源图层的可见性以查看结果",
   "units": {
     "miles": {
       "displayText": "英里",

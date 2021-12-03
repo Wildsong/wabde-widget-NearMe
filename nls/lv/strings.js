@@ -1,4 +1,4 @@
-﻿/*global define*/
+/*global define*/
 define({
   "_widgetLabel": "Manā apkaimē",
   "searchHeaderText": "Meklēt adresi vai atrast kartē",
@@ -29,6 +29,7 @@ define({
   "applyingFilterLabel": "Lieto filtru",
   "filterNotAppliedLabel": "Filtrs netiek lietots",
   "filterAppliedLabel": "Filtrs tiek lietots",
+  "errorInAttributeSearch": "Lai skatītu rezultātu, slāņa saraksta logrīkā pārbaudiet meklēšanas avota slāņa redzamību",
   "units": {
     "miles": {
       "displayText": "Jūdzes",

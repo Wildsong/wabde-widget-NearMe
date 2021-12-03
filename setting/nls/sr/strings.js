@@ -1,4 +1,4 @@
-﻿/*global define*/
+/*global define*/
 ///////////////////////////////////////////////////////////////////////////
 // Copyright © Esri. All Rights Reserved.
 //
@@ -48,7 +48,6 @@ define({
     "countryCode": "Kôd(ovi) zemlje ili regiona",
     "countryCodeEg": "npr. ",
     "countryCodeHint": "Ako ova vrednost ostane prazna, pretražuju se sve zemlje i regioni",
-    "questionMark": "?",
     "searchInCurrentMapExtent": "Pretraži samo u trenutnom obuhvatu mape",
     "zoomScale": "Skala zumiranja",
     "locatorUrl": "URL adresa geokodera",

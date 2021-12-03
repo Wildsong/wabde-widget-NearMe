@@ -1,4 +1,4 @@
-﻿/*global define*/
+/*global define*/
 define({
   "_widgetLabel": "Blizu mene",
   "searchHeaderText": "Pretraži adresu ili pronađi na karti",
@@ -29,6 +29,7 @@ define({
   "applyingFilterLabel": "Primjena filtra",
   "filterNotAppliedLabel": "Filtar nije primijenjen",
   "filterAppliedLabel": "Filtar primijenjen",
+  "errorInAttributeSearch": "Provjerite vidljivost sloja izvora pretraživanja u widgetu Popis slojeva da biste vidjeli rezultat",
   "units": {
     "miles": {
       "displayText": "Milje",

@@ -1,4 +1,4 @@
-﻿/*global define*/
+/*global define*/
 ///////////////////////////////////////////////////////////////////////////
 // Copyright © Esri. All Rights Reserved.
 //
@@ -48,7 +48,6 @@ define({
     "countryCode": "Κωδικοί χώρας ή περιοχής",
     "countryCodeEg": "π.χ. ",
     "countryCodeHint": "Εάν αφήσετε κενή αυτήν την τιμή, θα γίνει αναζήτηση σε όλες τις χώρες και περιοχές",
-    "questionMark": ";",
     "searchInCurrentMapExtent": "Αναζήτηση μόνο στην τρέχουσα έκταση χάρτη",
     "zoomScale": "Εστίαση κλίμακας",
     "locatorUrl": "URL Εργαλείου Γεωκωδικοποίησης",

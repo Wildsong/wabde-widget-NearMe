@@ -1,4 +1,4 @@
-﻿/*global define*/
+/*global define*/
 define({
   "_widgetLabel": "Minu lähedal",
   "searchHeaderText": "Otsi aadressi või asukohta kaardil",
@@ -29,6 +29,7 @@ define({
   "applyingFilterLabel": "Filtri rakendamine",
   "filterNotAppliedLabel": "Filtrit pole rakendatud",
   "filterAppliedLabel": "Filter on rakendatud",
+  "errorInAttributeSearch": "Tulemuse nägemiseks vaadake lähtekihi nähtavust kihtide loendi vidinast.",
   "units": {
     "miles": {
       "displayText": "mi",

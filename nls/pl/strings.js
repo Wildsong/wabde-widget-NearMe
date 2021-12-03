@@ -1,4 +1,4 @@
-﻿/*global define*/
+/*global define*/
 define({
   "_widgetLabel": "Blisko mnie",
   "searchHeaderText": "Wyszukaj adres lub zlokalizuj na mapie",
@@ -29,6 +29,7 @@ define({
   "applyingFilterLabel": "Stosowanie filtru",
   "filterNotAppliedLabel": "Filtr nie został zastosowany",
   "filterAppliedLabel": "Filtr został zastosowany",
+  "errorInAttributeSearch": "Sprawdź widoczność warstwy źródła wyszukiwania w widżecie Lista warstw, aby wyświetlić wynik",
   "units": {
     "miles": {
       "displayText": "Mile",

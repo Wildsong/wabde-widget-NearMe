@@ -742,6 +742,12 @@ float: right;
     min-height: 80px;
 }
 
+.jimu-widget-nearme .esriCTFeatureInfo:focus,
+.jimu-widget-nearme .esriCTInfoPanelFocus:focus
+{
+    outline: 2px solid #18acc2;
+}
+
 .jimu-widget-nearme .esriCTBorderBottom
 {
     border-bottom: 1px solid #464646;

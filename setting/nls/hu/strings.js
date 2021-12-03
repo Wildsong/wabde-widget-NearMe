@@ -1,4 +1,4 @@
-﻿/*global define*/
+/*global define*/
 ///////////////////////////////////////////////////////////////////////////
 // Copyright © Esri. All Rights Reserved.
 //
@@ -48,7 +48,6 @@ define({
     "countryCode": "Ország- vagy régiókód(ok)",
     "countryCodeEg": "pl. ",
     "countryCodeHint": "Ha üresen hagyja ezt az értéket, a keresés minden országra és régióra ki fog terjedni",
-    "questionMark": "?",
     "searchInCurrentMapExtent": "Csak az aktuális térképkiterjedésen belül keressen",
     "zoomScale": "Zoom-méretarány",
     "locatorUrl": "Geokódoló URL-címe",

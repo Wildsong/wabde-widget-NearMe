@@ -1,4 +1,4 @@
-﻿/*global define*/
+/*global define*/
 ///////////////////////////////////////////////////////////////////////////
 // Copyright © Esri. All Rights Reserved.
 //
@@ -48,7 +48,6 @@ define({
     "countryCode": "国コードまたは地域コード",
     "countryCodeEg": "例: ",
     "countryCodeHint": "この値を空白のままにすると、すべての国および地域を検索します",
-    "questionMark": "？",
     "searchInCurrentMapExtent": "現在のマップ範囲内のみを検索",
     "zoomScale": "ズーム縮尺",
     "locatorUrl": "ジオコーダーの URL",

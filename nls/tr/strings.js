@@ -1,4 +1,4 @@
-﻿/*global define*/
+/*global define*/
 define({
   "_widgetLabel": "Yakınımda",
   "searchHeaderText": "Adres arayın veya haritada bulun",
@@ -29,6 +29,7 @@ define({
   "applyingFilterLabel": "Filtre uygulanıyor",
   "filterNotAppliedLabel": "Filtre uygulanmadı",
   "filterAppliedLabel": "Filtre uygulandı",
+  "errorInAttributeSearch": "Sonucu görüntülemek için Katman Listesi aracında arama kaynağı katmanının görünürlüğünü kontrol edin",
   "units": {
     "miles": {
       "displayText": "Mil",

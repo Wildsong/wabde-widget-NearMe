@@ -1,4 +1,4 @@
-﻿/*global define*/
+/*global define*/
 define({
   "_widgetLabel": "A prop meu",
   "searchHeaderText": "Cerca una adreça o localitza-la al mapa",
@@ -29,6 +29,7 @@ define({
   "applyingFilterLabel": "S'està aplicant filtre",
   "filterNotAppliedLabel": "Filtre no aplicat",
   "filterAppliedLabel": "Filtre aplicat",
+  "errorInAttributeSearch": "Consulteu la visibilitat de la capa de la font de cerca al widget Llista de capes per veure el resultat",
   "units": {
     "miles": {
       "displayText": "Milles",

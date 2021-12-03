@@ -1,4 +1,4 @@
-﻿/*global define*/
+/*global define*/
 ///////////////////////////////////////////////////////////////////////////
 // Copyright © Esri. All Rights Reserved.
 //
@@ -48,7 +48,6 @@ define({
     "countryCode": "Šalies arba regiono kodas (-ai)",
     "countryCodeEg": "pvz., ",
     "countryCodeHint": "Jei ši reikšmė nebus nurodyta, bus ieškomos visos šalys ir regionai",
-    "questionMark": "?",
     "searchInCurrentMapExtent": "Ieškoti tik esamo žemėlapio aprėptyje",
     "zoomScale": "Mastelis",
     "locatorUrl": "Geokoderio URL",

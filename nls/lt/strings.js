@@ -1,4 +1,4 @@
-﻿/*global define*/
+/*global define*/
 define({
   "_widgetLabel": "Netoli manęs",
   "searchHeaderText": "Ieškoti adreso arba rasti žemėlapyje",
@@ -29,6 +29,7 @@ define({
   "applyingFilterLabel": "Taikomas filtras",
   "filterNotAppliedLabel": "Filtras nepritaikytas",
   "filterAppliedLabel": "Filtras pritaikytas",
+  "errorInAttributeSearch": "Patikrinkite paieškos šaltinio sluoksnio matomumą valdiklyje „Sluoksnių sąrašas“, kad matytumėte rezultatą",
   "units": {
     "miles": {
       "displayText": "Mylios",
